@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KALJABAR - Kalkulator Aljabar Matriks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>KALJABAR</h1>
+      <p>Kalkulator Aljabar Matriks</p>
+    </header>
+
+    <section class="matrix-inputs">
+      <div class="matrix">
+        <h2>Matriks A</h2>
+        <div class="grid" id="matrixA"></div>
+      </div>
+      <div class="matrix">
+        <h2>Matriks B</h2>
+        <div class="grid" id="matrixB"></div>
+      </div>
+    </section>
+
+    <section class="operation-section">
+      <label for="operation">Pilih Operasi Matriks:</label>
+      <select id="operation">
+        <option value="">-- Pilih Operasi --</option>
+        <option value="add">Penjumlahan</option>
+        <option value="subtract">Pengurangan</option>
+        <option value="multiply">Perkalian</option>
+        <option value="scalar">Kali Skalar</option>
+        <option value="transpose">Transpos</option>
+        <option value="inverse">Invers</option>
+        <option value="determinant">Determinan</option>
+        <option value="obe">OBE</option>
+        <option value="ref">REF</option>
+        <option value="rref">RREF</option>
+      </select>
+    </section>
+
+    <section class="result-section">
+      <h2>Hasil:</h2>
+      <div id="result" class="grid"></div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 KALJABAR. Dibuat oleh Tim 5.</p>
+    </footer>
+  </main>
+</body>
+</html>
